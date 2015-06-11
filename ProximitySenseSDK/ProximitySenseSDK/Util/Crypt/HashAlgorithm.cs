@@ -29,11 +29,13 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+using System;
 using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace System.Security.Cryptography {
+namespace ProximitySenseSDK.Util.Crypt
+{
 
 	[ComVisible (true)]
 	public abstract class HashAlgorithm : ICryptoTransform {

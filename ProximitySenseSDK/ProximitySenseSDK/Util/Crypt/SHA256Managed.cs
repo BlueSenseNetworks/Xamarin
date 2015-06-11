@@ -29,7 +29,8 @@
 
 using System.Runtime.InteropServices;
 
-namespace System.Security.Cryptography {
+namespace ProximitySenseSDK.Util.Crypt
+{
 	
 	public class SHA256Managed : SHA256 {
 

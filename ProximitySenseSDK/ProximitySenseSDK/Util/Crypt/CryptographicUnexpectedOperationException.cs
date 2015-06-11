@@ -29,14 +29,13 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using System.Globalization;
-using System.IO;
-using System.Runtime.InteropServices;
 
-namespace System.Security.Cryptography
+using System;
+
+namespace ProximitySenseSDK.Util.Crypt
 {
 
-	class CryptographicUnexpectedOperationException : Exception
+	public class CryptographicUnexpectedOperationException : Exception
 	{
 		public CryptographicUnexpectedOperationException (string noHashValueComputed)
 		{

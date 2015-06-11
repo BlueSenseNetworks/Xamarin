@@ -23,7 +23,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace System.Security.Cryptography {
+namespace ProximitySenseSDK.Util.Crypt
+{
 
 	internal static class SHAConstants {
 		// SHA-256 Constants

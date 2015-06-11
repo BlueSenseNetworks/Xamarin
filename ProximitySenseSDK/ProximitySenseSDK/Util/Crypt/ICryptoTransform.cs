@@ -27,9 +27,11 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+using System;
 using System.Runtime.InteropServices;
 
-namespace System.Security.Cryptography {
+namespace ProximitySenseSDK.Util.Crypt
+{
 
 	[ComVisible (true)]
 	public interface ICryptoTransform : IDisposable {

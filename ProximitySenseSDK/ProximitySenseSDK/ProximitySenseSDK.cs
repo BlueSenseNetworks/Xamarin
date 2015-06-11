@@ -1,5 +1,4 @@
-﻿using System;
-using ProximitySenseSDK.Api;
+﻿using ProximitySenseSDK.Api;
 
 namespace ProximitySenseSDK
 {
@@ -24,4 +23,3 @@ namespace ProximitySenseSDK
 		}
 	}
 }
-
