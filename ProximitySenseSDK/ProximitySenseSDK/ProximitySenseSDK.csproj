@@ -9,7 +9,8 @@
     <RootNamespace>ProximitySenseSDK</RootNamespace>
     <AssemblyName>ProximitySenseSDK</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,7 +32,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Api\Model\ActionBase.cs" />
-    <Compile Include="Api\Model\ActionWrapper.cs" />
+    <Compile Include="Api\Model\Deserialization\ActionWrapperJsonConverter.cs" />
+    <Compile Include="Api\Model\Deserialization\ActionWrapper.cs" />
     <Compile Include="Api\Model\RichContentAction.cs" />
     <Compile Include="Api\Model\Sighting.cs" />
     <Compile Include="Api\Model\ZoneEventDetails.cs" />

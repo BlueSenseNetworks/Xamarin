@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace ProximitySenseSDK.Api.Model
 {
-	public class ActionBase
+	public abstract class ActionBase
 	{
 		private static Dictionary<string, Type> types = new Dictionary<string, Type>();
+
+		public string Type { get; set; }
 
 		public string AppSpecificId { get; set; }
 		public ZoneEventDetails ZoneEvent { get; set; }
@@ -26,12 +27,18 @@ namespace ProximitySenseSDK.Api.Model
 		{
 			RegisterActionType<RichContentAction>("richContent");
 		}
+
 		public static ActionBase ParseActionResponse(string resultType, string result)
 		{
 			if (!types.ContainsKey(resultType))
 				return null;
 
 			return (ActionBase) JsonConvert.DeserializeObject(result, types[resultType]);
+		}
+
+		public static Type GetActionType(string resultType)
+		{
+			return types[resultType];
 		}
 	}
 }

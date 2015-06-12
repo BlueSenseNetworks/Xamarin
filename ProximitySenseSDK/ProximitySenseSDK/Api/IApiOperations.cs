@@ -7,11 +7,10 @@ namespace ProximitySenseSDK.Api
 {
 	public interface IApiOperations
 	{
-		AppUser AppUser { get; }
 		string BaseUrl { get; set; }
 		ApiCredentials Credentials { get; set; }
 
-		Task UpdateAppUserAsync ();
+		Task UpdateAppUserAsync (AppUser userProfile);
 		Task ReportBeaconSightingsAsync(IEnumerable<Sighting> sightings);
 		Task PollForAvailableActionResultsAsync(Action<ActionBase> onResult);
 	}
