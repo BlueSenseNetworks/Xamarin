@@ -5,29 +5,14 @@ namespace ProximitySenseSDK.Tests
 	[TestFixture]
 	public abstract class TestFixtureBase
 	{
-		protected const string ApplicationId = "19ed29fefb0043a1a319cc664e57c1e3";
-		protected const string PrivateKey = "K8fRofHy2so3Q01RR8MwupE3Sd0ZMgL2pWdZxGp4";
+		private const string ApplicationId = "19ed29fefb0043a1a319cc664e57c1e3";
+		private const string PrivateKey = "K8fRofHy2so3Q01RR8MwupE3Sd0ZMgL2pWdZxGp4";
 
 		[TestFixtureSetUp]
 		public virtual void FixtureSetup()
 		{
 			ProximitySenseSDK.Initialize(ApplicationId, PrivateKey);
 			ProximitySenseSDK.Api.BaseUrl = "http://localhost/BSN.Platform/api/v1";
-		}
-
-		[TestFixtureTearDown]
-		public virtual void FixtureTeardown()
-		{
-		}
-
-		[SetUp]
-		public virtual void Setup()
-		{
-		}
-
-		[TearDown]
-		public virtual void Teardown()
-		{
 		}
 	}
 }

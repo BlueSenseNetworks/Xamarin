@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using ProximitySenseSDK.Api.Model;
@@ -7,9 +8,9 @@ namespace ProximitySenseSDK.Tests
 {
 	public class RangingFixture : TestFixtureBase
 	{
-		private static Sighting[] CreateSightings()
+		private static IEnumerable<Sighting> CreateSightings()
 		{
-			var sightings = new Sighting[]
+			var sightings = new[]
 			{
 				new Sighting
 				{
@@ -48,7 +49,7 @@ namespace ProximitySenseSDK.Tests
 
 			Task.Delay(2000).Wait();
 
-			ProximitySenseSDK.Api.PollForAvailableActionResultsAsync(a => Debug.WriteLine("Received decision for {0}: {1} {2}ed", a.AppSpecificId, a.ZoneEvent.ZoneName, a.ZoneEvent.EventType)).Wait();
+			ProximitySenseSDK.Api.PollForAvailableActionResultsAsync(a => Debug.WriteLine("Received decision for {0}: {1}ed '{2}'", a.AppSpecificId, a.ZoneEvent.EventType, a.ZoneEvent.ZoneName)).Wait();
 		}
 	}
 }
