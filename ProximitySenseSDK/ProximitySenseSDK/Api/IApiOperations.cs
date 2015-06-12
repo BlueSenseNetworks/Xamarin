@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ProximitySenseSDK.Api.Model;
@@ -12,7 +13,7 @@ namespace ProximitySenseSDK.Api
 
 		Task UpdateAppUserAsync ();
 		Task ReportBeaconSightingsAsync(IEnumerable<Sighting> sightings);
-		Task PollForAvailableActionResultsAsync();
+		Task PollForAvailableActionResultsAsync(Action<ActionBase> onResult);
 	}
 
 }

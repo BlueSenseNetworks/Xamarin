@@ -79,18 +79,18 @@ namespace ProximitySenseSDK.Api
 			var response = await Client.SendAsync(request);
 		}
 
-		public async Task PollForAvailableActionResultsAsync()
+		public async Task PollForAvailableActionResultsAsync(Action<ActionBase> onResult)
 		{
 			var request = await PrepareSignedRequestAsync("decision", (object)null, "GET");
 			var response = await Client.SendAsync(request);
 
 			if (response.IsSuccessStatusCode)
 			{
-				await ProcessTriggerResults(response);
+				await ProcessTriggerResults(response, onResult);
 			}
 		}
 
-		private async Task ProcessTriggerResults(HttpResponseMessage response)
+		private async Task ProcessTriggerResults(HttpResponseMessage response, Action<ActionBase> onResult)
 		{
 			var actions = await response.Content.ReadAsAsync<ActionWrapper[]>();
 
@@ -99,7 +99,7 @@ namespace ProximitySenseSDK.Api
 				var resolved = ActionBase.ParseActionResponse(action.Type, action.Result);
 				if (resolved != null)
 				{
-					// send it off - callback, notification etc.
+					onResult(resolved);
 				}
 			}
 		}
