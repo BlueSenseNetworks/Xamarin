@@ -31,8 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Api\Model\ActionBase.cs" />
+    <Compile Include="Api\Model\ActionWrapper.cs" />
     <Compile Include="Api\Model\RichContentAction.cs" />
     <Compile Include="Api\Model\Sighting.cs" />
+    <Compile Include="Api\Model\ZoneEventDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProximitySenseSDK.cs" />
     <Compile Include="Api\ApiOperations.cs" />

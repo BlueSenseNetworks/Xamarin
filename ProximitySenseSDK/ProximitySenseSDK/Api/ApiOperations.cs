@@ -92,11 +92,15 @@ namespace ProximitySenseSDK.Api
 
 		private async Task ProcessTriggerResults(HttpResponseMessage response)
 		{
-			var actions = await response.Content.ReadAsAsync<ActionBase[]>();
+			var actions = await response.Content.ReadAsAsync<ActionWrapper[]>();
 
 			foreach (var action in actions)
 			{
-				var resolved = ActionBase.ParseActionResponse(action.Result);
+				var resolved = ActionBase.ParseActionResponse(action.Type, action.Result);
+				if (resolved != null)
+				{
+					// send it off - callback, notification etc.
+				}
 			}
 		}
 	}
