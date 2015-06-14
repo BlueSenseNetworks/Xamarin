@@ -34,6 +34,7 @@
     <Compile Include="Api\Model\ActionBase.cs" />
     <Compile Include="Api\Model\Deserialization\ActionWrapperJsonConverter.cs" />
     <Compile Include="Api\Model\Deserialization\ActionWrapper.cs" />
+    <Compile Include="Api\Model\DeviceCapabilities.cs" />
     <Compile Include="Api\Model\RichContentAction.cs" />
     <Compile Include="Api\Model\Sighting.cs" />
     <Compile Include="Api\Model\ZoneEventDetails.cs" />
@@ -43,6 +44,10 @@
     <Compile Include="Api\ApiCredentials.cs" />
     <Compile Include="Api\Model\AppUser.cs" />
     <Compile Include="Api\IApiOperations.cs" />
+    <Compile Include="Ranging\IRangingManager.cs" />
+    <Compile Include="Ranging\RangingManager.cs" />
+    <Compile Include="Util\DeviceCapabilitiesReporter.cs" />
+    <Compile Include="Util\IDeviceCapabilitiesReporter.cs" />
     <Compile Include="Util\Sha256Hasher.cs" />
     <Compile Include="Util\Crypt\HashAlgorithm.cs" />
     <Compile Include="Util\Crypt\ICryptoTransform.cs" />

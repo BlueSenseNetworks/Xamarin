@@ -11,7 +11,7 @@ using ProximitySenseSDK.Util;
 
 namespace ProximitySenseSDK.Api
 {
-	public class ApiOperations : IApiOperations
+	internal class ApiOperations : IApiOperations
 	{
 		private HttpClient client;
 		private string os = "TestOS";
@@ -65,7 +65,7 @@ namespace ProximitySenseSDK.Api
 
 			request.Headers.Add(HttpHeaderAuthorizationClientId, clientId ?? Credentials.ApplicationId);
 			request.Headers.Add(HttpHeaderAuthorizationSignature, token);
-			request.Headers.Add(HttpHeaderProximitySenseSdkPlatformAndVersion, string.Format("{0} - {1} (Xamarin)", os, ProximitySenseSDK.SDKVersion));
+			request.Headers.Add(HttpHeaderProximitySenseSdkPlatformAndVersion, string.Format("{0} - {1} (Xamarin)", os, ProximitySenseSDK.SdkVersion));
 			request.Headers.Add(HttpHeaderProximitySenseAppUserId, ProximitySenseSDK.UserProfile.AppSpecificId);
 
 			return request;
@@ -91,6 +91,16 @@ namespace ProximitySenseSDK.Api
 			if (response.IsSuccessStatusCode)
 			{
 				await ProcessTriggerResults(response, onResult);
+			}
+		}
+
+		public async Task ReportDeviceCapabilitiesAsync(DeviceCapabilities deviceCaps)
+		{
+			var request = await PrepareSignedRequestAsync("capabilities", deviceCaps);
+			var response = await Client.SendAsync(request);
+			if (!response.IsSuccessStatusCode)
+			{
+				await Task.Delay(new TimeSpan(0, 1, 0)).ContinueWith(t => ReportDeviceCapabilitiesAsync(deviceCaps));
 			}
 		}
 

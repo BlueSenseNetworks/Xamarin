@@ -13,6 +13,7 @@ namespace ProximitySenseSDK.Api
 		Task UpdateAppUserAsync (AppUser userProfile);
 		Task ReportBeaconSightingsAsync(IEnumerable<Sighting> sightings);
 		Task PollForAvailableActionResultsAsync(Action<ActionBase> onResult);
+		Task ReportDeviceCapabilitiesAsync(DeviceCapabilities deviceCaps);
 	}
 
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProximitySenseSDK", "Proxim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProximitySenseSDK.Tests", "ProximitySenseSDK.Tests\ProximitySenseSDK.Tests.csproj", "{3126F746-E8FA-48E1-AEBD-EDFDF8AD6AE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProximitySenseSDK.Windows", "ProximitySenseSDK.Windows\ProximitySenseSDK.Windows.csproj", "{82922A33-6A36-4FD1-B735-68F22BC23969}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3126F746-E8FA-48E1-AEBD-EDFDF8AD6AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3126F746-E8FA-48E1-AEBD-EDFDF8AD6AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3126F746-E8FA-48E1-AEBD-EDFDF8AD6AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82922A33-6A36-4FD1-B735-68F22BC23969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82922A33-6A36-4FD1-B735-68F22BC23969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82922A33-6A36-4FD1-B735-68F22BC23969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82922A33-6A36-4FD1-B735-68F22BC23969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
