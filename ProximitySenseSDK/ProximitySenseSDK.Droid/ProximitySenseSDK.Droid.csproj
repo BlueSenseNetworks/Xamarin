@@ -43,7 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
-    <Compile Include="DeviceCapabilitiesResolver.cs" />
+    <Compile Include="Api\DeviceCapabilitiesResolver.cs" />
+    <Compile Include="Ranging\RangingManagerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -57,5 +58,8 @@
       <Project>{F5D28F2F-3B3A-4B37-9091-321BD6AB3B78}</Project>
       <Name>ProximitySenseSDK</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Api\" />
   </ItemGroup>
 </Project>
