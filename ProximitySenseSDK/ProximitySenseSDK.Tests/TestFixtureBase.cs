@@ -12,7 +12,7 @@ namespace ProximitySenseSDK.Tests
 		public virtual void FixtureSetup()
 		{
 			ProximitySenseSDK.Initialize(ApplicationId, PrivateKey);
-			ProximitySenseSDK.Api.BaseUrl = "http://localhost/BSN.Platform/api/v1";
+			ProximitySenseSDK.Api.BaseUrl = "http://192.168.0.10/BSN.Platform/api/v1";
 		}
 	}
 }

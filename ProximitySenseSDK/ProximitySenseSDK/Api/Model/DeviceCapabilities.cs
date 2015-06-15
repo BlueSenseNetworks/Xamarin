@@ -12,7 +12,7 @@
 
 		public bool BleSupported { get; set; }
 		public bool BluetoothOn { get; set; }
-		public bool LocationServicesConsent { get; set; }
+		public uint LocationServicesStatus { get; set; }
 		public bool PushMessagesConsent { get; set; }
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace ProximitySenseSDK.Util
+namespace ProximitySenseSDK.Api
 {
 	public interface IDeviceCapabilitiesReporter
 	{

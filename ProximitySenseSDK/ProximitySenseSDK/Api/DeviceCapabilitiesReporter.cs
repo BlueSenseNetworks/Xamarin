@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using ProximitySenseSDK.Api.Model;
 
-namespace ProximitySenseSDK.Util
+namespace ProximitySenseSDK.Api
 {
 	class DeviceCapabilitiesReporter : IDeviceCapabilitiesReporter
 	{
