@@ -81,6 +81,12 @@
     <Reference Include="System.Net.Http.Formatting">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="ProximitySenseSDK">
+      <HintPath>..\packages\ProximitySenseSDK.0.0.1\lib\Xamarin.iOS10\ProximitySenseSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="ProximitySenseSDK.iOS">
+      <HintPath>..\packages\ProximitySenseSDK.0.0.1\lib\Xamarin.iOS10\ProximitySenseSDK.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProximitySenseQuickStart\ProximitySenseQuickStart.csproj">

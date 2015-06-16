@@ -27,15 +27,15 @@ Initial release, Xamarin iOS support only
     </metadata>
     <files>
         <!-- PCL -->
-        <file src="../ProximitySenseSDK/bin/Release/ProximitySenseSDK.dll" target="lib/portable-win+net45+wp8+win8+wpa81\ProximitySenseSDK.dll" />
+        <file src="../ProximitySenseSDK/bin/Release/ProximitySenseSDK.dll" target="lib\portable-win+net45+wp8+win8+wpa81" />
 
         <!-- android -->
-        <file src="../ProximitySenseSDK.Droid/bin/Release/ProximitySenseSDK.dll" target="lib/MonoAndroid10/ProximitySenseSDK.dll" />
-        <file src="../ProximitySenseSDK.Droid/bin/Release/ProximitySenseSDK.Droid.dll" target="lib/MonoAndroid10/ProximitySenseSDK.Droid.dll" />
+        <file src="../ProximitySenseSDK.Droid/bin/Release/ProximitySenseSDK.dll" target="lib\MonoAndroid10" />
+        <file src="../ProximitySenseSDK.Droid/bin/Release/ProximitySenseSDK.Droid.dll" target="lib\MonoAndroid10" />
 
         <!-- ios -->
-        <file src="../ProximitySenseSDK.iOS/bin/Release/ProximitySenseSDK.dll" target="lib/Xamarin.iOS10/ProximitySenseSDK.dll" />
-        <file src="../ProximitySenseSDK.iOS/bin/Release/ProximitySenseSDK.iOS.dll" target="lib/Xamarin.iOS10/ProximitySenseSDK.iOS.dll" />
+        <file src="../ProximitySenseSDK.iOS/bin/Release/ProximitySenseSDK.dll" target="lib\Xamarin.iOS10" />
+        <file src="../ProximitySenseSDK.iOS/bin/Release/ProximitySenseSDK.iOS.dll" target="lib\Xamarin.iOS10" />
 
     </files>
 </package>

@@ -25,7 +25,7 @@ namespace ProximitySenseQuickStart.iOS
 				Button.SetTitle (title, UIControlState.Normal);
 			};
 
-			ProximitySenseSDK.Initialize ("", "");
+			ProximitySenseSDK.ProximitySenseSDK.Initialize("", "");
 		}
 
 		public override void DidReceiveMemoryWarning ()

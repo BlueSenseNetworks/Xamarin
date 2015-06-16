@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ProximitySenseSDK</id>
+    <version>0.0.1</version>
+    <title>ProximitySense SDK for Xamarin and Windows</title>
+    <authors>Vladimir Petrov</authors>
+    <owners>Blue Sense Networks ltd</owners>
+    <projectUrl>https://github.com/BlueSenseNetworks/Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SDK for ProximitySense - the most advanced proximity cloud platform. Enables mobile apps with contextual proximity technology</description>
+    <releaseNotes>0.0.1
+Initial release, Xamarin iOS support only</releaseNotes>
+    <tags>ibeacon proximitysense sdk windows xamarin xam.pcl</tags>
+    <dependencies>
+      <dependency id="Acr.DeviceInfo" version="2.2.0" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+      <dependency id="Microsoft.Bcl" version="1.1.10" />
+      <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+      <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+    </dependencies>
+  </metadata>
+</package>

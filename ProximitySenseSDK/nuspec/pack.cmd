@@ -1,4 +1,4 @@
 @echo off
 del *.nupkg
-nuget pack ProximitySenseSDK.nuspec
+nuget pack ProximitySenseSDK.nuspec -NoDefaultExcludes
 pause
