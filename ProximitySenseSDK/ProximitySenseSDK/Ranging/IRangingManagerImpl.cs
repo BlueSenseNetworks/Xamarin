@@ -1,6 +1,6 @@
 using System;
 
-namespace ProximitySenseSDK.Ranging
+namespace ProximitySense.Ranging
 {
 	public interface IRangingManagerImpl
 	{

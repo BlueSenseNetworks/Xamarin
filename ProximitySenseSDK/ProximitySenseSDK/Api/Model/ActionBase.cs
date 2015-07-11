@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace ProximitySenseSDK.Api.Model
+namespace ProximitySense.Api.Model
 {
 	public abstract class ActionBase
 	{

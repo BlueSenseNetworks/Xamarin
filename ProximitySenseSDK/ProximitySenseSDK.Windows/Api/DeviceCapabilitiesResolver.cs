@@ -1,7 +1,7 @@
-﻿using ProximitySenseSDK.Api.Model;
-using ProximitySenseSDK.Api;
+﻿using ProximitySense.Api.Model;
+using ProximitySense.Api;
 
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	public class DeviceCapabilitiesResolver : IDeviceCapabilitiesResolver
 	{

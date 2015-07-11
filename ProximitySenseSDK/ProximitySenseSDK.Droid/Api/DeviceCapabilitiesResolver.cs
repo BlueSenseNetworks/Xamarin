@@ -1,11 +1,11 @@
-﻿using ProximitySenseSDK.Api.Model;
-using ProximitySenseSDK.Api;
+﻿using ProximitySense.Api.Model;
+using ProximitySense.Api;
 using Android.Content;
 using Android.App;
 using Android.Content.PM;
 using Android.Bluetooth;
 
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	public class DeviceCapabilitiesResolver : IDeviceCapabilitiesResolver
 	{

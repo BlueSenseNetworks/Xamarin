@@ -5,11 +5,11 @@ using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using ProximitySenseSDK.Api.Model;
-using ProximitySenseSDK.Api.Model.Deserialization;
-using ProximitySenseSDK.Util;
+using ProximitySense.Api.Model;
+using ProximitySense.Api.Model.Deserialization;
+using ProximitySense.Util;
 
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	internal class ApiOperations : IApiOperations
 	{
@@ -65,8 +65,8 @@ namespace ProximitySenseSDK.Api
 
 			request.Headers.Add(HttpHeaderAuthorizationClientId, clientId ?? Credentials.ApplicationId);
 			request.Headers.Add(HttpHeaderAuthorizationSignature, token);
-			request.Headers.Add(HttpHeaderProximitySenseSdkPlatformAndVersion, string.Format("{0} - {1} (Xamarin)", os, ProximitySenseSDK.SdkVersion));
-			request.Headers.Add(HttpHeaderProximitySenseAppUserId, ProximitySenseSDK.UserProfile.AppSpecificId);
+			request.Headers.Add(HttpHeaderProximitySenseSdkPlatformAndVersion, string.Format("{0} - {1} (Xamarin)", os, SDK.SdkVersion));
+			request.Headers.Add(HttpHeaderProximitySenseAppUserId, SDK.UserProfile.AppSpecificId);
 
 			return request;
 		}

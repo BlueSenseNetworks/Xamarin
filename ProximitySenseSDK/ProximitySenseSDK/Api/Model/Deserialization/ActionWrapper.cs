@@ -1,4 +1,4 @@
-﻿namespace ProximitySenseSDK.Api.Model.Deserialization
+﻿namespace ProximitySense.Api.Model.Deserialization
 {
 	public class ActionWrapper
 	{

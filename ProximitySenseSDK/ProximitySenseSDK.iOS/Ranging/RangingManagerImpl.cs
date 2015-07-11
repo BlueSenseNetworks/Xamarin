@@ -1,12 +1,12 @@
 ﻿using System;
-using ProximitySenseSDK.Ranging;
+using ProximitySense.Ranging;
 using CoreLocation;
 using Foundation;
 using System.Linq;
-using ProximitySenseSDK.Api.Model;
+using ProximitySense.Api.Model;
 using System.Threading.Tasks;
 
-namespace ProximitySenseSDK.Ranging
+namespace ProximitySense.Ranging
 {
 	public class RangingManagerImpl : IRangingManagerImpl
 	{
@@ -22,7 +22,7 @@ namespace ProximitySenseSDK.Ranging
 			locationManager.RegionEntered += LocationManager_RegionEntered;
 			locationManager.RegionLeft += LocationManager_RegionLeft;
 			locationManager.DidRangeBeacons += async (object sender, CLRegionBeaconsRangedEventArgs e) => {
-				await ProximitySenseSDK.Api.ReportBeaconSightingsAsync (e.Beacons.Where(x => x != null).Select (x => new Sighting
+				await SDK.Api.ReportBeaconSightingsAsync (e.Beacons.Where(x => x != null).Select (x => new Sighting
 					{
 						Uuid = x.ProximityUuid.AsString(),
 						Major = (int)x.Major,
@@ -87,7 +87,7 @@ namespace ProximitySenseSDK.Ranging
 			while (true) 
 			{
 				await Task.Delay (new TimeSpan(800));
-				await ProximitySenseSDK.Api.PollForAvailableActionResultsAsync (action => {
+				await SDK.Api.PollForAvailableActionResultsAsync (action => {
 					var handler = ActionReceived;
 					if (handler != null)
 						handler (this, new ActionReceivedEventArgs{

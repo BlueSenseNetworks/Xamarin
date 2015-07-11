@@ -3,7 +3,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace ProximitySenseSDK.Api.Model.Deserialization
+namespace ProximitySense.Api.Model.Deserialization
 {
 	internal class ActionWrapperJsonConverter : JsonConverter
 	{

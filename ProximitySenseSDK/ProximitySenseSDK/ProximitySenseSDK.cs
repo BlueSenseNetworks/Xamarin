@@ -1,11 +1,11 @@
-﻿using ProximitySenseSDK.Api;
-using ProximitySenseSDK.Api.Model;
-using ProximitySenseSDK.Ranging;
-using ProximitySenseSDK.Util;
+﻿using ProximitySense.Api;
+using ProximitySense.Api.Model;
+using ProximitySense.Ranging;
+using ProximitySense.Util;
 
-namespace ProximitySenseSDK
+namespace ProximitySense
 {
-	public static class ProximitySenseSDK
+	public static class SDK
 	{
 		public const string SdkVersion = "1.0";
 

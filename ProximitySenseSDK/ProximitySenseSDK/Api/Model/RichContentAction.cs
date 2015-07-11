@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ProximitySenseSDK.Api.Model
+namespace ProximitySense.Api.Model
 {
 	public class RichContentAction : ActionBase
 	{

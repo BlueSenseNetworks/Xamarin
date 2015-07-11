@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ProximitySenseSDK.Api.Model
+namespace ProximitySense.Api.Model
 {
 	public class AppUser
 	{
@@ -15,7 +15,7 @@ namespace ProximitySenseSDK.Api.Model
 
 		public async Task UpdateAsync()
 		{
-			await ProximitySenseSDK.Api.UpdateAppUserAsync(this);
+			await SDK.Api.UpdateAppUserAsync(this);
 		}
 	}
 }

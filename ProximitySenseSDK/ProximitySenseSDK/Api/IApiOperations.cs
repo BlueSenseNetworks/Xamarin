@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ProximitySenseSDK.Api.Model;
+using ProximitySense.Api.Model;
 
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	public interface IApiOperations
 	{

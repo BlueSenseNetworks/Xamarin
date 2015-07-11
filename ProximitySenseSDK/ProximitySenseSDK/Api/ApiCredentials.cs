@@ -1,4 +1,4 @@
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	public class ApiCredentials
 	{

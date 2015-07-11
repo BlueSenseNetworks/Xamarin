@@ -1,4 +1,4 @@
-﻿namespace ProximitySenseSDK.Api.Model
+﻿namespace ProximitySense.Api.Model
 {
 	public class ZoneEventDetails
 	{

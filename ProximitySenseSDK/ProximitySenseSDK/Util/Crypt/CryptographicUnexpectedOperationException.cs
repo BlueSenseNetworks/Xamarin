@@ -32,7 +32,7 @@
 
 using System;
 
-namespace ProximitySenseSDK.Util.Crypt
+namespace ProximitySense.Util.Crypt
 {
 
 	public class CryptographicUnexpectedOperationException : Exception

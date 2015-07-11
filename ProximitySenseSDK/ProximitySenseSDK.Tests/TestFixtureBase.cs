@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace ProximitySenseSDK.Tests
+namespace ProximitySense.Tests
 {
 	[TestFixture]
 	public abstract class TestFixtureBase
@@ -11,8 +11,8 @@ namespace ProximitySenseSDK.Tests
 		[TestFixtureSetUp]
 		public virtual void FixtureSetup()
 		{
-			ProximitySenseSDK.Initialize(ApplicationId, PrivateKey);
-			ProximitySenseSDK.Api.BaseUrl = "http://192.168.0.10/BSN.Platform/api/v1";
+			SDK.Initialize(ApplicationId, PrivateKey);
+			SDK.Api.BaseUrl = "http://192.168.0.10/BSN.Platform/api/v1";
 		}
 	}
 }

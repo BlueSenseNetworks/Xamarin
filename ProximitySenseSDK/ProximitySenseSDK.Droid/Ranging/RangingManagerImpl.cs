@@ -1,7 +1,7 @@
 ﻿using System;
-using ProximitySenseSDK.Ranging;
+using ProximitySense.Ranging;
 
-namespace ProximitySenseSDK.Ranging
+namespace ProximitySense.Ranging
 {
 	public class RangingManagerImpl : IRangingManagerImpl
 	{

@@ -1,6 +1,6 @@
-﻿using ProximitySenseSDK.Api.Model;
+﻿using ProximitySense.Api.Model;
 
-namespace ProximitySenseSDK.Ranging
+namespace ProximitySense.Ranging
 {
 	public class ActionReceivedEventArgs : System.EventArgs
 	{

@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using ProximitySenseSDK.Api.Model;
+using ProximitySense.Api.Model;
 
-namespace ProximitySenseSDK.Api
+namespace ProximitySense.Api
 {
 	class DeviceCapabilitiesReporter : IDeviceCapabilitiesReporter
 	{
@@ -19,14 +19,14 @@ namespace ProximitySenseSDK.Api
 		{
 			var deviceCaps = CollectDeviceCapabilities();
 
-			await ProximitySenseSDK.Api.ReportDeviceCapabilitiesAsync(deviceCaps);
+			await SDK.Api.ReportDeviceCapabilitiesAsync(deviceCaps);
 		}
 
 		private DeviceCapabilities CollectDeviceCapabilities()
 		{
 			var deviceCaps = new DeviceCapabilities
 			{
-				ApiVersion = ProximitySenseSDK.SdkVersion,
+				ApiVersion = SDK.SdkVersion,
 #if __PLATFORM__
 				OperatingSystem = DeviceInfo.Instance.OperatingSystem,
 				ApplicationVersion = DeviceInfo.Instance.AppVersion,

@@ -30,7 +30,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace ProximitySenseSDK.Util.Crypt
+namespace ProximitySense.Util.Crypt
 {
 
 	[ComVisible (true)]

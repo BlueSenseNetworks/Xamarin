@@ -23,7 +23,7 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace ProximitySenseSDK.Util.Crypt
+namespace ProximitySense.Util.Crypt
 {
 
 	internal static class SHAConstants {

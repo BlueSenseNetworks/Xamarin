@@ -1,8 +1,8 @@
 using System;
 using System.Text;
-using ProximitySenseSDK.Util.Crypt;
+using ProximitySense.Util.Crypt;
 
-namespace ProximitySenseSDK.Util
+namespace ProximitySense.Util
 {
 	public class Sha256Hasher
 	{

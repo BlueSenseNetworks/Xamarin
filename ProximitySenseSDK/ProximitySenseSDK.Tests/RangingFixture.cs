@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using ProximitySenseSDK.Api.Model;
+using ProximitySense.Api.Model;
 
-namespace ProximitySenseSDK.Tests
+namespace ProximitySense.Tests
 {
 	public class RangingFixture : TestFixtureBase
 	{
@@ -37,7 +37,7 @@ namespace ProximitySenseSDK.Tests
 		{
 			var sightings = CreateSightings();
 
-			ProximitySenseSDK.Api.ReportBeaconSightingsAsync(sightings).Wait();
+			SDK.Api.ReportBeaconSightingsAsync(sightings).Wait();
 		}
 
 		[Test]
@@ -45,11 +45,11 @@ namespace ProximitySenseSDK.Tests
 		{
 			var sightings = CreateSightings();
 
-			ProximitySenseSDK.Api.ReportBeaconSightingsAsync(sightings).Wait();
+			SDK.Api.ReportBeaconSightingsAsync(sightings).Wait();
 
 			Task.Delay(2000).Wait();
 
-			ProximitySenseSDK.Api.PollForAvailableActionResultsAsync(a => Debug.WriteLine("Received decision for {0}: {1}ed '{2}'", a.AppSpecificId, a.ZoneEvent.EventType, a.ZoneEvent.ZoneName)).Wait();
+			SDK.Api.PollForAvailableActionResultsAsync(a => Debug.WriteLine("Received decision for {0}: {1}ed '{2}'", a.AppSpecificId, a.ZoneEvent.EventType, a.ZoneEvent.ZoneName)).Wait();
 		}
 	}
 }
